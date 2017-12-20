@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Orlando City</title>
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+	<script src="https://use.fontawesome.com/546d948f55.js"></script>
+	<link rel="stylesheet" href="css/orlando.css">
+</head>
+<body>
+
+	<header>
+
+		<div class="container">
+		
+			<!-- Para carregar imagens, coloca o caminho da imagem.
+			 	 Alt = caso não carregue a imagem, aparece escrito, nesse caso 'logotipo'
+			 -->
+			<img id="logotipo" src="img/orlando-logo.png" alt="Logotipo">
+
+		</div>
+
+		<div class="header-black">
+			<div class="container">
+				<ul class="pull-right">
+					<!-- Tag A, utilizada para indicar que será algo 'clicável'. E o href indica o caminho do que será aberto "(# leva para a própria página. -->
+					<li class="club-01"><a href="#"></a></li>
+					<li class="club-02"><a href="#"></a></li>
+					<li class="club-03"><a href="#"></a></li>
+					<li class="club-04"><a href="#"></a></li>
+					<li class="club-05"><a href="#"></a></li>
+					<li class="club-06"><a href="#"></a></li>
+					<li class="club-07"><a href="#"></a></li>
+					<li class="club-08"><a href="#"></a></li>
+					<li class="club-09"><a href="#"></a></li>
+					<li class="club-10"><a href="#"></a></li>
+					<li class="club-11"><a href="#"></a></li>
+					<li class="club-12"><a href="#"></a></li>
+					<li class="club-13"><a href="#"></a></li>
+					<li class="club-14"><a href="#"></a></li>
+					<li class="club-15"><a href="#"></a></li>
+					<li class="club-16"><a href="#"></a></li>
+					<li class="club-17"><a href="#"></a></li>
+					<li class="club-18"><a href="#"></a></li>
+					<li class="club-19"><a href="#"></a></li>
+					<li class="club-20"><a href="#"></a></li>
+					<li class="club-21"><a href="#"></a></li>
+					<li class="club-22"><a href="#"></a></li>
+
+				</ul>
+			
+			</div>
+		</div>
+		
+
+		<div class="container">
+			<div class="row">
+				<nav id="menu" class="pull-right">
+					<ul>
+						<li><a href="#">Tickets</a></li>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Schedule</a></li>
+						<li class="search">
+							<!-- Jeito antigo.
+							<input type="search" placeholder="search...">
+							-->
+
+							<div class="input-group">
+								<input type="search"  placeholder="search">
+								<span class="input-group-btn">
+									<!-- A tag 'i' está com a classe 'fa fa-search' que é do font awesome.
+										 Há várias outras opções, para isso ve no site que tem a documentação.
+									 -->
+									<button class="btn btn-default" type="button">
+										<i class="fa fa-search"></i>
+									</button>
+								</span>
+							</div> <!-- /input-group-->
+
+						</li>
+
+					</ul>
+				</nav>
+			</div> <!-- /row-->
+		</div> <!-- /container-->
+		
+	</header>
+	
+	<!-- Utilizado para o corpo do documento. -->
+	<section>
+		
+		<div id="banner">
+			
+			<h1>Orlando City <small>Orlando City Soccer Club</small></h1>
+
+		</div>
+
+		<!-- O container permite deixar o conteúdo alinhado no meio -->
+		<div id=news class="container">			
+			
+			<div class="row text-center">
+				<!-- O H1 é utilizado somente para o título do site.
+				Uma vez utilizada não é possível usar mais no mesmo escopo. É necessário utilizar outro.
+				-->
+				<h2>Latest News</h2>
+				<!-- Para fazer uma linha horizontal (horizontal row) -->
+				<hr>
+			</div>
+			
+				<div class="row thumbnails">
+				<!-- Class 'col-md-3', divide as colunas de um site em 12 (4 partes de 3 / Possível separar de várias maneiras, porém sempre em 12) 
+					Isso é padrão do bootstrap que faz isso para que o site seja responsivo.
+				-->
+				<div class="col-md-3">
+					<img src="img/noticia-thumb.jpg" alt="Noticia">
+					<h3>Orlando City Acquires GoalKeeper Joe Bendik from Toronto FC</h3>
+					<!-- A tag time auxilia os buscadores a entender que é uma data -->
+					<time>December 21, 2015</time>
+				</div>
+				<div class="col-md-3">
+					<img src="img/noticia-thumb.jpg" alt="Noticia">
+					<h3>Orlando City Acquires GoalKeeper Joe Bendik from Toronto FC</h3>
+					<!-- A tag time auxilia os buscadores a entender que é uma data -->
+					<time>December 21, 2015</time>
+				</div>
+				<div class="col-md-3">
+					<img src="img/noticia-thumb.jpg" alt="Noticia">
+					<h3>Orlando City Acquires GoalKeeper Joe Bendik from Toronto FC</h3>
+					<!-- A tag time auxilia os buscadores a entender que é uma data -->
+					<time>December 21, 2015</time>
+				</div>
+				<div class="col-md-3">
+					<img src="img/noticia-thumb.jpg" alt="Noticia">
+					<h3>Orlando City Acquires GoalKeeper Joe Bendik from Toronto FC</h3>
+					<!-- A tag time auxilia os buscadores a entender que é uma data -->
+					<time>December 21, 2015</time>
+				</div>
+			</div>
+
+		</div> <!-- div news -->
+
+		<div id="estatisticas">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<!-- A tag <p> tem a funcionalidade de criar um parágrafo. Automaticamente coloca um parágrafo -->
+						<p>61348<small>Stadium Capacity</small></p>
+					</div>
+					<div class="col-md-4">
+						<p>2010<small>Founded</small></p>
+					</div>
+					<div class="col-md-4">
+						<p>7th<small>Eastern Conference</small></p>
+					</div>								
+				</div> <!-- div row -->
+			</div> <!-- div container -->
+			
+		</div> <!-- div estatisticas -->
+
+		<div id=call-to-action>
+			
+			<div class="container">		
+
+				<div class="row text-center">
+					<h2>American club number one in Brazil</h2>
+					<hr>
+				</div>
+
+				<div class="row">
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+
+				<div class="text-center">
+					<div class="row row-max-400">
+					
+						<!-- O 'xs' afeta telas de celular. -->
+						<div class="col-xs-6" ="col-xs-6">							
+							<a href="#" class="btn btn-roxo">Shop</a>
+						</div> <!-- div col-xs-6 -->
+						<div class="col-xs-6">
+							<a href="#" class="btn btn-amarelo">Register</a>
+						</div>
+						
+					</div>
+				</div>
+				
+
+			</div> <!-- div container -->
+
+		</div> <!-- div call to action -->
+
+	</section>
+
+	<!-- Utilizado para fazer o rodapé do documento. -->
+	<footer>
+		
+		<div class="row row-cinza-claro">
+			
+			<div class="container">
+				
+				<div class="row">
+					
+					<div class="col-md-2 text-center">
+						
+						<img class="logotipo" src="img/orlando-logo.png" alt="Logotipo">
+
+					</div> <!-- div col-md-2 -->
+
+					<div class="col-md-10">
+						
+						<div class="row row-cols">
+
+							<!-- POPULAR POSTS -->
+							<div class="col-md-4 col-popular-post">
+
+								<h4>POPULAR POSTS</h4>
+								
+								<!-- A Tag <ul> significa 'unordered list'. Lista não ordenada, ou lista sem ordem de prioridade. Sempre que há uma sequencia de informações, é possível utilizar a tag 'ul'
+									 Existe apenas uma tag aceitável dentro da 'ul' que é a tag 'li'. 
+									 'li' significa list item. Determina um item da lista que está sendo criada.
+								-->
+								<ul class="list-unstyled"> <!-- class: Indica que não terá estilo. class utilizada para tirar a 'bolinha' de marcação no começo -->
+									<li>
+										<h5>Neque porro quisquam est, quister.</h5>
+										<time>January 01, 2017</time>
+									</li>
+									<li>
+										<h5>Neque porro quisquam est, quister.</h5>
+										<time>January 01, 2017</time>
+									</li>									
+
+								</ul>
+							</div>
+							<!-- LINKS-->
+							<div class="col-md-4 col-links">
+								
+								<h4>LINKS</h4>
+
+								<ul class="list-unstyled">
+									<li><a href="#"><i class="fa fa-angle-right"></i> Tickets </a></li>
+									<li><a href="#"><i class="fa fa-angle-right"></i> News </a></li>
+									<li><a href="#"><i class="fa fa-angle-right"></i> Schedule </a></li>
+
+								</ul>
+
+							</div>
+							<!-- GET IN TOUCH -->
+							<div class="col-md-4 col-get-in-touch">
+								
+								<h4>GET IN TOUCH</h4>
+
+								<!-- A tag <br> é utilizada para realizar a quebra de linha. 
+									O texto está dentro da tag address-->
+									<!-- Tag <span> utilizada para formatação de texto. -->
+								<address> 
+									<i class="fa fa-map-marker"></i> <span> 618 E. South Street, Suite 510 <br> Orlando, FL 32801 </span>
+								</address>
+
+								<!-- Utilizando o 'tel' no href, caso seja um celular por exemplo ele já realiza a ligação, ou então no skype já faz a chamada. -->
+								<!-- O texto está dentro do P -->
+								<p><a href="tel:1855ORL.CITY"><i class="fa fa-phone"></i> 1.855.ORL.CITY</a></p>
+
+								<ul class="list-unstyled list-socials">
+									<li>
+										<a href="https://www.facebook.com/rafael.olmedo.9" target="_blanck"><i class="fa fa-facebook"></i></a>
+									</li>
+									<li>
+										<a href="#" target="_blanck"><i class="fa fa-twitter"></i></a>
+									</li>
+									<li>
+										<a href="#" target="_blanck"><i class="fa fa-instagram"></i></a>
+									</li>
+									<li>
+										<a href="#" target="_blanck"><i class="fa fa-pinterest-p"></i></a>
+									</li>
+								</ul>
+
+							</div>							
+						</div> <!-- div row row-cols -->
+					</div> <!-- div col-md-10 -->
+
+				</div> <!-- div row -->
+			</div>
+
+		</div>
+
+		<div class="row row-cinza-escuro">
+			
+			<div class="container">
+				<p class="pull-left"> Copyright @ Orlando City Soccer 2017. All rights reserved.</p>
+				<p class="pull-right text-roxo"> Created by HCODE in Udemy</p>
+
+
+			</div>
+
+		</div>
+
+	</footer>
+
+
+	<!-- Para utilizar o js, é necessário o jquery. Assim entra no site, faz o download e antes de chamar o js, coloca pra chamar o jquery.-->
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,508 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+	font-size: 1em;
+}
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+	font-size: 1em;
+}
+
+
+
+
+
+
+header {
+	width: 100%;
+	height: 150px;
+	/* Nesse caso, atribui a cor, porém não tem como fazer a transparência, que é feita com o rgba.*/
+	/*background-color: #5E299A;*/
+	background-color: rgba(94, 41, 154, .8);
+	/* Utilizado para indicar o indice de profundidade. Quanto maior, mais pra "frente" ele fica.
+	Necessário alterar o position para relative para o z-index valer.*/
+	z-index: 2;
+	position: relative;
+}
+header .container {
+	position: relative;
+}
+header .header-black {
+	background-color: #000;
+	height: 40px;
+}
+header .header-black li {
+	background-image: url("../img/clubs.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin: 4px;
+}
+header .header-black li.club-01 {
+	background-position: 0px 0px;
+}
+header .header-black li.club-02 {
+	background-position: -48px 0px;
+}
+header .header-black li.club-03 {
+	background-position: -95px 0px;
+}
+header .header-black li.club-04 {
+	background-position: -140px 0px;
+}
+header .header-black li.club-05 {
+	background-position: -189px 0px;
+}
+header .header-black li.club-06 {
+	background-position: -239px 0px;
+}
+header .header-black li.club-07 {
+	background-position: -288px 0px;
+}
+header .header-black li.club-08 {
+	background-position: -334px 0px;
+}
+header .header-black li.club-09 {
+	background-position: -381px 0px;
+}
+header .header-black li.club-10 {
+	background-position: -429px 0px;
+}
+header .header-black li.club-11 {
+	background-position: -478px 0px;
+}
+header .header-black li.club-12 {
+	background-position: -527px 0px;
+}
+header .header-black li.club-13 {
+	background-position: -579px 0px;
+}
+header .header-black li.club-14 {
+	background-position: -629px 0px;
+}
+header .header-black li.club-15 {
+	background-position: -671px 0px;
+}
+header .header-black li.club-16 {
+	background-position: -719px 0px;
+}
+header .header-black li.club-17 {
+	background-position: -763px 0px;
+}
+header .header-black li.club-18 {
+	background-position: -808px 0px;
+}
+header .header-black li.club-19 {
+	background-position: -853px 0px;
+}
+header .header-black li.club-20 {
+	background-position: -900px 0px;
+}
+header .header-black li.club-21 {
+	background-position: -950px 0px;
+}
+header .header-black li.club-22 {
+	background-position: -1000px 0px;
+}
+header .header-black li a {
+	width: 32px;
+	height: 32px;
+	display: block;
+}
+header #logotipo {
+	position: absolute;
+	top: 20px;
+}
+#menu {
+	margin: 12px 0;
+}
+#menu li {
+	display: inline-block;
+	font-family: "OpenSans";
+}
+
+#menu li.search
+{
+	width: 182px;
+
+}
+
+#menu li.search input
+{
+	background-color: #5C2D90;
+	color: #FFF;
+	border: none;
+	height: 30px;
+	line-height: 30px;
+}
+
+/* Para mudar a cor de fundo do search */
+#menu li.search ::-webkit-input-placeholder
+{
+	color: #FFF;
+}
+
+#menu li.search button
+{
+	background: none;
+	border: none;
+	position: absolute;
+	right: 3px;
+	top: -1px;
+}
+
+#menu li.search button i
+{
+	font-size: 14px;
+	/* Utilizando o rgba, é possível passar a quantidade das cores e no último a "transparencia" que vai de 0 a 1.*/
+	color: rgba(255, 255, 255, .5);
+}
+
+#menu li a {
+	color: #FFF;
+	font-size: 16px;
+	padding: 10px 25px;
+	font-weight: bold;
+}
+
+#menu li.search .input-group
+{
+	top: 8px;
+}
+
+/* Para o corpo do site. */
+
+#banner
+{
+	width: 	100%;
+	height: 728px; 	
+	position: relative; 	
+	background: url("../img/banner.jpg") no-repeat;	
+    top: -110px;	
+	background-position: 0px -100px;
+
+}
+
+#banner h1
+{
+	/* Quando se faz o top/left... e não tem nenhum efeito, é pq está faltando o 'position: relative;'*/	
+	top: 300px;
+	position: relative;
+	font-size: 92px;
+	color: #FFF;
+	/* text-shadow = Sombra que irá incluir no texto:;
+		   Primeiro número: negativo colocaa sombra para o left, positivo para o right;
+		   Segundo número: negativo - top / positivo - botton;
+		   Terceiro número: Não entendi direito.
+	*/
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);
+	font-family: "OpenSans-Light";
+	margin-left: 50px;
+}
+
+#banner h1 small
+{
+	font-size: 32px;
+	/* Antes de ter o display block H1 e H1 - SMALL estavam na mesma linha (texto). Após utilizar o block ele coloca na linha de baixo*/
+	display: block;
+	color: #FFF;
+	font-family: "OpenSans";
+	font-weight: bold;
+}
+
+#news
+{
+	position: relative;
+	top: -110px;
+}
+#news h2
+{
+	color: #5E2799;
+	font-family: "OpenSans-Light";
+	font-size: 48px;
+	/* Utilizado para deixar tudo em maiusculo*/
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#news hr
+{
+	border: #FED192 solid 6px; 
+	width: 200px;
+	/* É uma expressão para centralizar*/
+	margin: 0 auto;
+}
+
+#news .thumbnails
+{
+	margin-top: 20px;
+}
+
+#news .thumbnails h3
+{
+	color: #5E299A;
+	font-size: 18px;
+	font-family: 'OpenSans';
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+#news .thumbnails time
+{
+	color: #A7A7A7;
+	font-size: 16px;
+	font-family: 'OpenSans';
+}
+
+#estatisticas
+{
+	background-color: #5E299A;
+	width: 100%;
+	height: 200px;
+	text-align: center;
+}
+
+#estatisticas p
+{
+	color: #FED092;
+	text-transform: uppercase;
+	font-family: 'OpenSans';
+	font-size: 64px;
+	margin-top: 36px;
+}
+
+#estatisticas p small
+{
+	color: #FFF;
+	font-family: 'OpenSans-Light';
+	font-size: 24px;
+	/*Exibe o conteúdo como se fosse um bloco. Automaticamente ele quebra a linha*/
+	display: block;
+}
+
+#call-to-action
+{
+	text-align: center;
+	margin-top: 105px; 
+}
+#call-to-action h2
+{
+	color: #5E2799;
+	font-family: "OpenSans-Light";
+	font-size: 48px;
+	/* Utilizado para deixar tudo em maiusculo*/
+	text-align: center;
+}
+
+#call-to-action hr
+{
+	border: #FED192 solid 6px; 
+	width: 200px;
+	/* É uma expressão para centralizar*/
+	margin: 0 auto;
+}
+
+#call-to-action p
+{
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+
+/* Aqui no HTML foi colocado o btn-default, copiado o valor padrão para
+	para a classe utilizando o inspecionar no browser e utilizado no css.
+   No CSS as propriedades foram alteradas para ficar de acordo com a necessidade,
+    dessa forma, no HTML basta alterar o btn-default para btb-roxo.
+*/
+#call-to-action .btn
+{
+	min-width: 164px;
+    height: 44px;
+    line-height: 34px;
+    /* Caso queira a borda reta.*/
+    border-radius: 0;
+}
+#call-to-action .btn-roxo 
+{
+    color: #FFF;
+    background-color: #5E299A;
+    border-color: #5E299A;
+}
+
+#call-to-action .btn-amarelo 
+{
+    color: #000;
+    background-color: #FDE192;
+    border-color: #FDE192;    
+}
+
+#call-to-action .row-max-400
+{
+	margin: 0 auto;
+	max-width: 400px;
+}
+
+footer 
+{
+	margin-top: 100px;
+}
+footer .row
+{
+	width: 100%;
+}
+
+footer .row p
+{
+	line-height: 55px;
+	margin-bottom: 0;
+}
+footer .row-cinza-claro
+{	
+	height: 200px;
+	background-color: #171F26;	
+}
+
+footer .row-cinza-escuro
+{
+	height: 60px;
+	background-color: #11171D;
+	border-top: #242D37 1px solid;
+}
+
+footer .pull-left
+{
+	font-family: "OpenSans";
+	font-size: 16px;
+	color: #666
+}
+footer .text-roxo
+{
+	color: #623291;
+	font-family: "OpenSans";
+	font-weight: bold;
+	font-size: 14px;
+}
+
+/* Apenas didático. Utilizado para mostrar a divisão realizada na tela.
+footer .col-red
+{
+	border: red 2px solid;
+	height: 200px;
+}
+
+footer .col-yellow
+{
+	border: yellow 2px solid;
+	height: 200px;
+}*/
+
+footer .logotipo
+{
+	margin-top: 28px;
+}
+
+footer .col-popular-post,
+footer .col-links,
+footer .col-get-in-touch
+{
+	margin-top: 40px;
+}
+footer .row-cols h4
+{
+	font-family: 'OpenSans';
+	font-size: 16px;
+	color: #FFF;
+	/* Margem interna*/
+	padding-bottom: 17px;
+	/* Provavelmente utilizado para fazer a linha no final.*/
+	border-bottom: #242D37 1px solid;
+}
+
+footer .row-cols h5
+{
+	color: #666;
+	font-family: Arial;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+footer .row-cols time
+{
+	color: #FDE092;
+	font-family: Arial;
+	font-size: 14px;
+}
+
+/* Retira o estio da lista.*/
+/*footer .row-cols ul
+{
+	list-style: nome;
+}*/
+
+footer .col-links a,
+footer .col-get-in-touch a
+{
+	color: #FFF;
+	font-family: Arial;	
+	font-size: 14px;
+}
+
+footer .col-links .fa
+{
+	margin: 0 6px; 
+}
+footer .col-get-in-touch address
+{
+	color: #666;
+	font-family: Arial;	
+	font-size: 14px;
+	margin-bottom: 0;
+
+}
+
+footer .col-get-in-touch address i
+{
+	position: relative;
+	top: -14px;
+}
+footer .col-get-in-touch address span
+{
+	display: inline-block;
+}
+footer .col-get-in-touch p
+{
+	line-height: 20px;
+}
+footer .col-get-in-touch i
+{
+	color: #9B9B9B;
+	font-size: 20px;
+	margin: 0 6px; 
+}
+footer .col-get-in-touch a 
+{
+	color: #666;
+}
+
+footer .list-socials
+{
+	margin-top: 4px;
+}
+footer .list-socials li
+{
+	display: inline-block;
+}
+footer .list-socials a
+{
+	display: block;
+	border: #9B9B9B 1px solid;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 14px; 
+	text-align: center;
+}
+footer .list-socials i
+{
+	font-size: 16px;
+	margin: 7px auto;
+}
